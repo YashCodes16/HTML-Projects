@@ -1,0 +1,36 @@
+figcaption {
+  text-align: center;
+  color: rgb(190, 132, 7);
+}
+body {
+  background-color: black;
+}
+p {
+  font-size: 1.5em;
+  color: rgb(170, 141, 67);
+}
+li {
+  color: #814141;
+}
+h1 {
+  color: lightcyan;
+}
+img {
+  width: 90%;
+  height: 70%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#footer {
+  color: whitesmoke;
+}
+
+#font1 {
+  font-family: monospace;
+  font-size: larger;
+  letter-spacing: 2px;
+}
