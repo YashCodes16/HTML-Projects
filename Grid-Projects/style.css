@@ -1,0 +1,282 @@
+main{
+    display:grid;
+    grid-template-columns:1fr 5fr;
+    gap:20px;
+    padding:20px;
+}
+body{
+    font-family: 'Sedan SC' sherif;
+    background-color: #f5f5f5;
+}
+.left{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    position: sticky;
+    top:20px;
+    background-color: black;
+    height:90vh;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.profile p{
+    color:white;
+    font-size: larger;
+    font-weight: 250;
+}
+
+.profile img{
+    width: 8vw;
+    border-radius: 100%;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    align-items: center; 
+    margin:15px;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    height: 6vh;
+    width: 10vw;
+    color:white;
+    margin-left:30px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    margin-bottom: 3vh;
+}
+
+.nav >a {
+    text-decoration: none;
+    font-size: 200;
+    font-weight: 300;
+    padding-left: 20px;
+    color: white;
+}
+.nav:hover{
+    color:gold
+}
+.nav>a:hover{
+    color:lightgrey
+}
+
+.right{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+header input{
+    border-radius: 20px;
+    width:200px;
+    height: 25px;
+    margin:30px 100px 0 0;
+    offset: 0;
+    border: 0 solid white;
+    background-color: white;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header>h1{
+    margin:20px 0 0 50px;
+    font-size: 35px;
+    font-weight: 700;
+}
+header>input:focus{
+    text-decoration: none;
+    outline:0;
+    border: 2px solid greenyellow;
+}
+#box,#schedule{
+    width:90%;
+    border-radius: 15px;
+    background-color: white;
+    padding :20px;
+    
+}
+#board{
+    margin-left:50px;
+    margin-top:30px;
+}
+#board img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+#data,#users,#schedule{
+    margin-left: 50px;
+    border-radius: 20px;
+}
+.grad{
+    width:200px;
+    height :120px;
+    background-color: lightcoral;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    
+}
+.g2{
+    background-color: lightblue;
+}
+
+.g3{
+    background-color: lightgreen;
+}
+.g4{
+    background-color: lightskyblue ;
+}
+.align{
+    text-align: center;
+    text-decoration: underline;
+}
+.Big-grad{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top:30px;
+}
+.g1:hover{
+    background-image: radial-gradient(lightgreen,lightblue);
+} 
+.g2:hover{
+    background-image: radial-gradient(red,greenyellow);
+}
+.g3:hover{
+    background-image: radial-gradient(pink,greenyellow);
+}
+.g4:hover{
+    background-image: radial-gradient(orange,greenyellow);
+}
+.grad>i{
+    margin-left: 170px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.grad>p{
+    font-size:medium;
+    font-weight: bold;
+    margin:0;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+/* .align:hover{
+    font-size: x-large;
+    color: blue;
+} */
+ 
+table{
+    width:90%;
+    margin-left: 40px;
+    border-collapse: collapse;
+    
+}
+
+tr>th{
+    background-color: bisque;
+    height:50px
+}
+.cen{
+    text-align: center;
+    width:50%;
+}
+.lef{
+    text-align: left;
+}
+td{
+    height: 50px;
+}
+.even{
+    background-color: lightgrey;
+}
+.odd{
+    background-color: lightcyan;
+}
+td:hover{
+    background-color: aqua;
+}
+
+#schedule{
+    margin-left: 50px;
+    margin-top: 40px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    height: 400px;
+}
+.head{
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.od{
+    border-left: 3px solid green;
+    padding-left: 15px;
+}
+
+.ev{
+    border-left: 2px solid blue;
+    padding-left: 15px;
+}
+iframe{
+    border-radius: 30px;
+    margin-left:30px;
+    margin-top:20px;
+}
+.parts{
+    display: flex;
+    flex-direction: row;
+    gap:24px;
+    flex-wrap: wrap;
+}
+.part2{
+    width:500px;
+    background-color: white;
+    margin-top:20px;
+    border-radius: 30px;
+    margin-left: 20px;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding:0 40px;
+}
+input{
+    height: 25px;
+    border-radius: 8px;
+}
+textarea , button{
+    border-radius: 5px;
+
+}
+
+button{
+    background-color: lightgreen;
+    border:0;
+    height: 25px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: black;
+    text-align: center;
+    padding: 20px 0 ;
+}
+footer i, footer p{
+    color: white;
+    margin:0 10px;
+}
+span{
+    font-weight: bold;
+}
