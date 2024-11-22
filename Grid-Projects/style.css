@@ -1,8 +1,11 @@
 main{
     display:grid;
     grid-template-columns:1fr 5fr;
-    gap:20px;
-    padding:20px;
+    gap:1rem;
+    padding:1rem;
+}
+html {
+    font-size: 20px; /* This changes 1rem to 20px */
 }
 body{
     font-family: 'Sedan SC' sherif;
@@ -11,12 +14,12 @@ body{
 .left{
     display:flex;
     flex-direction: column;
-    gap:10px;
+    gap:0.5rem;
     position: sticky;
-    top:20px;
+    top:1rem;
     background-color: black;
     height:90vh;
-    border-radius: 20px;
+    border-radius: 1rem;
     align-items: center;
 }
 
@@ -33,9 +36,9 @@ body{
 .profile{
     display: flex;
     flex-direction: column;
-    gap:5px;
+    gap:0.2rem;
     align-items: center; 
-    margin:15px;
+    margin:0.8rem;
 }
 .nav{
     display: flex;
@@ -44,8 +47,8 @@ body{
     height: 6vh;
     width: 10vw;
     color:white;
-    margin-left:30px;
-    padding-right: 20px;
+    margin-left:1.5rem;
+    padding-right: 1rem;
     text-transform: uppercase;
     margin-bottom: 3vh;
 }
@@ -54,7 +57,7 @@ body{
     text-decoration: none;
     font-size: 200;
     font-weight: 300;
-    padding-left: 20px;
+    padding-left: 1rem;
     color: white;
 }
 .nav:hover{
@@ -67,13 +70,13 @@ body{
 .right{
     display:flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1rem;
 }
 header input{
-    border-radius: 20px;
-    width:200px;
-    height: 25px;
-    margin:30px 100px 0 0;
+    border-radius: 1rem;
+    width:10rem;
+    height: 1.2rem;
+    margin:1.5rem 5rem 0 0;
     offset: 0;
     border: 0 solid white;
     background-color: white;
@@ -84,8 +87,8 @@ header{
     justify-content: space-between;
 }
 header>h1{
-    margin:20px 0 0 50px;
-    font-size: 35px;
+    margin:1rem 0 0 2.5rem;
+    font-size: 1.7rem;
     font-weight: 700;
 }
 header>input:focus{
@@ -95,14 +98,14 @@ header>input:focus{
 }
 #box,#schedule{
     width:90%;
-    border-radius: 15px;
+    border-radius: 0.75rem;
     background-color: white;
-    padding :20px;
+    padding :1rem;
     
 }
 #board{
-    margin-left:50px;
-    margin-top:30px;
+    margin-left:2.5rem;
+    margin-top:1.5rem;
 }
 #board img{
     width: 100%;
@@ -111,14 +114,14 @@ header>input:focus{
 }
 
 #data,#users,#schedule{
-    margin-left: 50px;
-    border-radius: 20px;
+    margin-left: 2.5rem;
+    border-radius: 1rem;
 }
 .grad{
-    width:200px;
-    height :120px;
+    width:10rem;
+    height :6rem;
     background-color: lightcoral;
-    border-radius: 20px;
+    border-radius: 1rem;
     display:flex;
     flex-direction: column;
     
@@ -141,7 +144,7 @@ header>input:focus{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top:30px;
+    padding-top:1.5rem;
 }
 .g1:hover{
     background-image: radial-gradient(lightgreen,lightblue);
@@ -156,16 +159,16 @@ header>input:focus{
     background-image: radial-gradient(orange,greenyellow);
 }
 .grad>i{
-    margin-left: 170px;
-    margin-top: 20px;
-    margin-bottom: 25px;
+    margin-left: 8.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.25rem;
 }
 .grad>p{
     font-size:medium;
     font-weight: bold;
     margin:0;
-    margin-left: 20px;
-    margin-bottom: 10px;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
 }
 /* .align:hover{
     font-size: x-large;
@@ -174,14 +177,14 @@ header>input:focus{
  
 table{
     width:90%;
-    margin-left: 40px;
+    margin-left: 2rem;
     border-collapse: collapse;
     
 }
 
 tr>th{
     background-color: bisque;
-    height:50px
+    height:2.5rem;
 }
 .cen{
     text-align: center;
@@ -191,7 +194,7 @@ tr>th{
     text-align: left;
 }
 td{
-    height: 50px;
+    height: 2.5rem;
 }
 .even{
     background-color: lightgrey;
@@ -204,11 +207,11 @@ td:hover{
 }
 
 #schedule{
-    margin-left: 50px;
-    margin-top: 40px;
+    margin-left: 2.5rem;
+    margin-top: 2rem;
     scroll-behavior: smooth;
     overflow-y: scroll;
-    height: 400px;
+    height: 20rem;
 }
 .head{
     
@@ -219,40 +222,40 @@ td:hover{
 
 .od{
     border-left: 3px solid green;
-    padding-left: 15px;
+    padding-left: 0.75rem;
 }
 
 .ev{
     border-left: 2px solid blue;
-    padding-left: 15px;
+    padding-left: 0.75rem;
 }
 iframe{
-    border-radius: 30px;
-    margin-left:30px;
-    margin-top:20px;
+    border-radius: 1.5rem;
+    margin-left:1.5rem;
+    margin-top:1rem;
 }
 .parts{
     display: flex;
     flex-direction: row;
-    gap:24px;
+    gap:1.2rem;
     flex-wrap: wrap;
 }
 .part2{
-    width:500px;
+    width:25rem;
     background-color: white;
-    margin-top:20px;
-    border-radius: 30px;
-    margin-left: 20px;
+    margin-top:1rem;
+    border-radius: 1.5rem;
+    margin-left: 1rem;
     
 }
 form{
     display: flex;
     flex-direction: column;
-    gap:20px;
-    padding:0 40px;
+    gap:1rem;
+    padding:0 2rem;
 }
 input{
-    height: 25px;
+    height: 1.25rem;
     border-radius: 8px;
 }
 textarea , button{
@@ -263,20 +266,52 @@ textarea , button{
 button{
     background-color: lightgreen;
     border:0;
-    height: 25px;
+    height: 1.25rem;
 }
 footer{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1rem;
     background-color: black;
     text-align: center;
-    padding: 20px 0 ;
+    padding: 1rem 0 ;
 }
 footer i, footer p{
     color: white;
-    margin:0 10px;
+    margin:0 0.5;
 }
 span{
     font-weight: bold;
+}
+
+@media screen and (max-width: 1400px){
+
+    main{
+        display: block;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    .left{
+        height:25vh;
+        position: static;
+    }
+    .profile-img{
+        position: absolute;
+        top:0.1rem;
+    }
+    .profile p{
+        color:white;
+        font-size: larger;
+        font-weight: 250;
+        margin: 3.5rem 0 2rem 0;
+    }
+    .navbar i {
+        display: none;
+    }
+
 }
