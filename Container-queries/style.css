@@ -1,7 +1,9 @@
-*,*::before,
-*::after{
+ *
+ ,*::before,
+*::after
+{
     box-sizing:border-box;
-}
+} 
 
 body{
     margin:0;
@@ -9,51 +11,51 @@ body{
     padding:0 1rem;
     background: lavender;
     font-family: Montserrat, sans-serif;
-    line-height: 1.3;
+    line-height: 1.3; /* give gap between the lines */
 }
 img{
     display:block;
     width:100%;
     aspect-ratio: 3/2; /* So that all the image looks same */
     object-fit: cover;
-}
+} 
 
 article *{
-    margin:0;
+    margin:0; /* decrease all the margins of every element inside article*/
 }
 
 h3{
     font-size: 1.3rem;
     margin-bottom: 0.2em;
     line-height:1.24;
-}
+} 
 ul{
     list-style:none;
-    margin: 0;
-    padding: 0;
-}
+     margin: 0;
+    padding: 0; 
+} 
 
-.grid-container{
+ .grid-container{
     padding:1rem;
     margin:0 auto;
     max-width:1400px;
     background:#b3b3d7;
-}
+} 
 
-.grid{
+ .grid{
     display: grid;
     gap:1rem;
-}
+} 
 
-article{
+ article{
     display: grid;
     gap:1rem;
     padding:1rem;
     background: white;
     padding: clamp(1rem,4vw,2rem);
-    font-size: clamp(1rem, 3vw,1.6rem) ;
-}
+    font-size: clamp(1rem, 3vw,1.6rem) ; 
+} 
 
-h3{
+ h3{
     font-size: clamp(1.4rem,4vw,2.5rem);
-}
+} 
