@@ -43,7 +43,7 @@ ul{
 } 
 
  .grid{
-    display: grid;
+    display: grid; /* 1 coulmn per row */
     gap:1rem;
 } 
 
@@ -59,3 +59,31 @@ ul{
  h3{
     font-size: clamp(1.4rem,4vw,2.5rem);
 } 
+
+
+@media screen and (width>800px){
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .article-container:first-child{
+        grid-column: span 2;
+    }
+}
+
+@media screen and (width > 1000px){
+    .grid{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .article-container:first-child{
+        grid-column: span 4;
+    }
+    .article-container:nth-child(2){
+        grid-column: span 2;
+    }
+    .article-container:nth-child(3){
+        grid-column: span 2;
+    }
+    .article-container:last-child{
+        grid-column: span 4;
+    }
+}
