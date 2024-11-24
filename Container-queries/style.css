@@ -12,6 +12,7 @@ body{
     background: lavender;
     font-family: Montserrat, sans-serif;
     line-height: 1.3; /* give gap between the lines */
+    font-size: 16px;
 }
 img{
     display:block;
@@ -52,20 +53,47 @@ ul{
     gap:1rem;
     padding:1rem;
     background: white;
-    padding: clamp(1rem,4vw,2rem);
-    font-size: clamp(1rem, 3vw,1.6rem) ; 
+    padding: clamp(1rem,4cqi,2rem);
+    font-size: clamp(1rem, 3cqi,1.6rem) ; 
 } 
 
  h3{
-    font-size: clamp(1.4rem,4vw,2.5rem);
+    font-size: clamp(1.4rem,4cqi,2.5rem);
 } 
+.article-container{
+    container-type: inline-size;
+    container-name: article;
+}
 
+@container article (inline-size >500px) {
+    article{
+        grid-template-columns: 1fr 2fr;
+    }
+    img{
+        height: 40cqh
+    }
+}
+
+@container article (inline-size>800px){
+    article{
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    img{
+        height: 60cqh;
+        object-fit:cover;
+    }
+}
 
 @media screen and (width>800px){
     .grid{
         grid-template-columns: repeat(2,1fr);
     }
     .article-container:first-child{
+        grid-column: span 2;
+    }
+    .article-container:last-child{
         grid-column: span 2;
     }
 }
@@ -84,3 +112,4 @@ ul{
         grid-column: span 4;
     }
 }
+
