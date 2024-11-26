@@ -1,0 +1,45 @@
+.bubble{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    background-color: rgb(85, 198, 218);
+    position:relative;
+    animation-name: float;
+    animation-duration: 15s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    opacity: 0.3;
+}
+
+.bubble::before{
+    content: "";
+    width: 170px;
+    height:170px;
+    top: 15px;
+    left: 15px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: blue ;
+    animation-name: float;
+}
+
+.bubble::after{
+    content: "";
+    width: 170px;
+    height:170px;
+    top: 15px;
+    left: 15px;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(blue,white);
+
+}
+
+@keyframes float {
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(500px);
+    }
+}
