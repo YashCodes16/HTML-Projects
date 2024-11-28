@@ -1,0 +1,100 @@
+*{
+    padding:0;
+    margin:0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    height:3400px; /* its not good to give height manually, I need to find a way to do it relatively*/
+    
+}
+img{
+    width: 100%;
+    height:100%;
+    border-radius: 15px;
+}
+.background_image{
+    width:280px;
+    height:200px;
+}
+.cards{
+    width:320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+}   
+
+main{
+  display: flex;
+  align-items: center;
+
+}
+.card{
+    background-color: white;
+    height: 550px;
+    border-radius: 15px;
+    padding-top: 20px;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 25px 20px;
+
+}
+.heading{
+    margin: 20px 0;
+}
+
+p{
+    line-height: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    font-size: medium;
+    text-align: center;
+}
+button{
+    border: 0;
+    outline: 0;
+    background-color: orange;
+    padding:8px 14px;
+    color: white;
+    border-radius:4px;
+    margin-left:20px;   
+}
+.contactBackground{
+    background-color:rgba(211, 211, 211, 0.347);
+    width: 330px;
+    padding:10px;
+    border-radius:20px
+    
+}
+/* the position is given manually, which is not good    */
+.contactBackground:nth-child(2){
+    position: absolute;
+    top:570px;
+    z-index: 2;
+}
+.contactBackground:nth-child(3){
+    position: absolute;
+    top:1120px;
+    z-index: 4;
+}
+.contactBackground:nth-child(4){
+    position: absolute;
+    top:1670px;
+    z-index: 5;
+}
+.contactBackground:nth-child(5){
+    position: absolute;
+    top:2220px;
+    z-index: 6;
+}
+.contactBackground:nth-child(6){
+    position: absolute;
+    top:2770px;
+    z-index: 7;
+}
